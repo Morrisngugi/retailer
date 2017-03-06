@@ -66,7 +66,7 @@ for (var i = 0; i < fullScreenButton.length; i++) {
     // Element Blocking
     function blockUI(item) {    
         $(item).block({
-            message: '<img src="assets/images/reload.gif" width="20px" alt="">',
+            message: '<img src="assets/admin/images/reload.gif" width="20px" alt="">',
             css: {
                 border: 'none',
                 padding: '0px',
@@ -305,7 +305,7 @@ for (var i = 0; i < fullScreenButton.length; i++) {
                 boxedLayoutCheck.click();
             }
         
-            $(".theme-color").attr("href", 'assets/css/themes/green.css');
+            $(".theme-color").attr("href", 'assets/admin/css/themes/green.css');
            
             sidebarAndContentHeight();
         },
@@ -423,7 +423,7 @@ for (var i = 0; i < fullScreenButton.length; i++) {
     // Color changer
     $(".colorbox").click(function(){
         var color =  $(this).attr('data-css');
-        $(".theme-color").attr('href', 'assets/css/themes/' + color + '.css');
+        $(".theme-color").attr('href', 'assets/admin/css/themes/' + color + '.css');
         return false;
     });
     
