@@ -163,16 +163,7 @@
                         <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
                         <li ><a href="orders.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-file"></span><p>Orders</p></a></li>
                         <li class="active"><a href="settings.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Settings</p></a></li>
-                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-log-in"></span><p>Login</p><span class="arrow"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="login.html">Login Form</a></li>
-                                <li><a href="login-alt.html">Login Alt</a></li>
-                                <li><a href="register.html">Register Form</a></li>
-                                <li><a href="register-alt.html">Register Alt</a></li>
-                                <li><a href="forgot.html">Forgot Password</a></li>
-                                <li><a href="lock-screen.html">Lock Screen</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="Data.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Data</p></a></li>
                     </ul>
                 </div><!-- Page Sidebar Inner -->
             </div><!-- Page Sidebar -->
@@ -190,49 +181,308 @@
 
                     <div class="row">
                        <div class="col-lg-12 col-md-12">
-                                <div class="panel panel-white">
-                                    <div class="panel-heading clearfix">
-                                        <h3 class="panel-title">App Settings</h3>
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h3 class="panel-title">App Settings</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="tabs-left" role="tabpanel">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tab9" role="tab" data-toggle="tab">General Settings</a></li>
+                                        <li role="presentation"><a href="#tab10" role="tab" data-toggle="tab">Users</a></li>
+                                        <li role="presentation"><a href="#tab11" role="tab" data-toggle="tab">Branding</a></li>
+                                        <li role="presentation"><a href="#tab12" role="tab" data-toggle="tab">Home</a></li>   
+                                        <li role="presentation"><a href="#tab13" role="tab" data-toggle="tab">Contact Us</a></li>   
+                                        <li role="presentation"><a href="#tab14" role="tab" data-toggle="tab">About Us</a></li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active fade in" id="tab9">
+                                           <div class="col-md-6">
+                                            <div class="panel panel-white">
+
+                                                <div class="panel-body">
+                                                    <form class="form-horizontal">
+                                                        <div class="row">
+
+                                                            <div class="setting-item form-group">
+                                                                <label class="panel-title">Enable Point-of-Sale Mode</label>
+
+                                                                <p class="secondary-text">
+                                                                    Allow users with the POS role to process transactions on behalf of customers.
+                                                                </p>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="setting-item form-group">
+
+                                                                <label  class="panel-title">Automatically Approve Orders</label>
+                                                                <div class="row">
+                                                                    <div class="col-xs-10">
+                                                                        <p class="secondary-text">
+                                                                            Automatically appove orders.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="setting-item form-group">
+                                                                <label class="panel-title">Delivery Charge</label>
+
+                                                                <p class="secondary-text">
+                                                                    Specify the charge that will be applied to orders that require delivery. 
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                                                            
+                                                        </div>
+                                                    </form>
+                                                </div> 
+                                            </div>
+                                        </div> 
                                     </div>
-                                    <div class="panel-body">
-                                        <div class="tabs-left" role="tabpanel">
-                                            <!-- Nav tabs -->
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li role="presentation" class="active"><a href="#tab9" role="tab" data-toggle="tab">General Settings</a></li>
-                                                <li role="presentation"><a href="#tab10" role="tab" data-toggle="tab">Users</a></li>
-                                                <li role="presentation"><a href="#tab11" role="tab" data-toggle="tab">Branding</a></li>
-                                                <li role="presentation"><a href="#tab12" role="tab" data-toggle="tab">Home</a></li>   
-                                                <li role="presentation"><a href="#tab12" role="tab" data-toggle="tab">Contact Us</a></li>   
-                                                <li role="presentation"><a href="#tab12" role="tab" data-toggle="tab">About Us</a></li>
-                                            </ul>
-                                            <!-- Tab panes -->
-                                            <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active fade in" id="tab9">
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
-                                                       
-                                                </div>
-                                                <div role="tabpanel" class="tab-pane fade" id="tab10">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                                </div>
-                                                <div role="tabpanel" class="tab-pane fade" id="tab11">
-                                                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
-                                                </div>
-                                                <div role="tabpanel" class="tab-pane fade" id="tab12">
-                                                    <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab10">
+                                        <div class="col-md-6">
+                                            <div class="panel panel-white">
+
+                                                <div class="panel-body">
+                                                    <form class="form-horizontal">
+
+
+                                                        <div class="table-responsive project-stats">  
+                                                         <div class="row">
+                                                             <div class="col-sm-3">
+                                                                 <a href="addUser.html" class="waves-effect waves-button"><p>Add User</p></a></li> 
+                                                             </div>
+                                                             <div class="col-sm-5">
+                                                                <div class="input-group">
+                                                                 <input type="search" class="form-control" placeholder="Enter user name or role name">
+                                                                 <div class="input-group-btn">
+                                                                    <button type="button" class="btn btn-primary" ><i class="fa fa-search"></i> Search </button>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+
+                                                                <th>Name</th>
+                                                                <th>Roles</th>
+                                                                <th>Active</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr><td>
+                                                                Admin</td>
+                                                                <td>Merchant, Merchant Admin</td>
+                                                                <td>   Active</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="tab11">
+                             <div class="table-responsive project-stats">
+                                 <div class="col-xs-12 col-sm-6">
+                                  <div class="panel panel-white">
+
+                                    <div class="panel-body">
+                                        <form class="form-horizontal">
+
+                                            <div class="setting-item form-group">
+                                                <label>Site Name</label>
+                                                <p class="secondary-text">
+                                                    This is the name that is used across the site and also as part of the browser window title. 
+                                                </p>
+                                                <div>
+                                                    <input type="text" name="sitename" " class="stretch form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="setting-item form-group">
+                                                <label class="panel-title">Site Tagline</label>
+                                                <p class="secondary-text">
+                                                    This text is displayed below the site name in the home page header section. This is also used as part of the page title in the browser window.
+                                                </p>
+                                                <div>
+                                                    <input type="text" name="tagline" ng-model="SC.tenant.Tagline" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div flow-init class="setting-item form-group" flow-name="logo.flow">
+                                                <label class="panel-title">Site Logo</label>
+                                                <p class="secondary-text">
+                                                    Your logo will be shown below at the actual size that it will displayed at when used on the site.
+                                                </p>
+
+                                                <div>
+                                                    <div>
+                                                        <div ng-show="$flow.files.length">
+                                                            <div>
+                                                                <img flow-img="$flow.files[0]" height="30px"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="error-text" ng-show="!SC.tenant.LogoImagePath && !$flow.files.length">
+                                                            No logo found
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="section-margin-top">
+                                                    <button class="btn btn-danger" ng-show="$flow.files.length" ng-click="$flow.cancel()">
+                                                        Remove
+                                                    </button>
+                                                    <button flow-btn flow-attrs="{accept:'image/*'}" class="btn btn-normal">
+                                                        Change
+                                                    </button>                    
+                                                </div>
+                                            </div>
+
+                                            <div class="setting-item form-group">
+                                                <label class=" panel-title">Site Color</label>
+                                                <p class="secondary-text">
+                                                    Specify the accent colour used across the site. You may need to refresh the page for this change to take effect.
+                                                </p>
+                                                <div>
+                                                    <input type="color" class="form-control" style="max-width: 80px" ng-model="SC.tenant.SiteHexColor"/>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                                        </form>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="tab12">
+                        <div class="col-md-6">
+                           <div class="panel panel-white">
+                               <div class="panel-body">
+                                <form class="form-horizontal"> 
+                                 <div class="setting-item form-group">
+                                    <label class="panel-title">Product Display Style</label>
+                                    <p class="secondary-text">
+                                        This settings controls how products are shown to the user on the Home screen. 
+                                    </p>
+                                    <div>
+                                        <div class="form-group">
+                                            <select class="form-control" ng-model="SC.tenant.ProductDisplayStyle" id="productDisplayStyle">
+                                                <option value="imageGrid">Grid with large images</option>
+                                                <option value="listWithImages">List with small images</option>
+                                                <option value="listWithoutImages">List without images</option>
+                                            </select>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+
+                                <div class="setting-item form-group">
+                                    <label class="panel-title">Enable Header</label>
+                                    <div class="row">
+                                        <div class="col-xs-10">
+                                            <p class="secondary-text">
+                                                Enables the header content on the Home screen (for large screens only).
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <switch class="col-xs-6 pull-right" ng-model="SC.tenant.EnableHeader"></switch>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                            </form>
+                        </div>
                     </div>
-                    
                 </div>
-             
-        </div><!-- Main Wrapper -->
-        <div class="page-footer">
-            <p class="no-s">2015 &copy; Virtual City</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab13">
+                <div class="col-md-6">
+                   <div class="panel panel-white">
+                       <div class="panel-body">
+                        <form class="form-horizontal">
+                           <div class="setting-item form-group">
+                            <label class="panel-title">Contact Address</label>
+                            <p class="secondary-text">
+                                This is the contact address that is shown on the Contact page.
+                            </p>
+                            <div>
+                                <input type="text" ng-model="SC.tenant.ContactAddress" class="stretch form-control" />
+                            </div>
+                        </div>
+
+                        <div class="setting-item form-group">
+                            <label class="panel-title">Contact Phone Number</label>
+                            <p class="secondary-text">
+                                This is the contact telephone number that is shown on the Contact page.
+                            </p>
+                            <div>
+                                <input type="text" ng-model="SC.tenant.ContactNumber" class="stretch form-control"/>
+                            </div>
+                        </div>
+                        <div class="setting-item form-group">
+                            <label class="panel-title">Contact Email Address</label>
+                            <p class="secondary-text">
+                                This is the contact email address that is shown on the Contact page.
+                            </p>
+                            <div>
+                                <input type="text" ng-model="SC.tenant.ContactEmail" class="stretch form-control" />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div><!-- Page Inner -->
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="tab14">
+        <div class="col-md-6">
+                   <div class="panel panel-white">
+                       <div class="panel-body">
+                        <form class="form-horizontal">
+                        <div class="setting-item form-group">
+                <label class="panel-title">About Us Text</label>
+                <p class="secondary-text">
+                    This text appears on the About page.
+                </p>
+                <div>
+                    <textarea ng-model="SC.tenant.AboutUsText" class="stretch form-control about-us"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save changes</button>
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+</div>
+</div>
+</div>
+</div> 
+</div>
+
+</div>
+
+</div><!-- Main Wrapper -->
+<div class="page-footer">
+    <p class="no-s">2015 &copy; Virtual City</p>
+</div>
+</div><!-- Page Inner -->
 </main><!-- Page Content -->
 <nav class="cd-nav-container" id="cd-nav">
     <header>
