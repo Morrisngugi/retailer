@@ -5,7 +5,7 @@
     <head>
 
         <!-- Title -->
-        <title>Retailer | Orders</title>
+        <title>Retailer | Data</title>
 
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
@@ -35,331 +35,368 @@
         <script src="assets/admin/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
 
     </head>
-        <body class="page-header-fixed page-horizontal-bar">
-            <div class="overlay"></div>
-            
-            
-            <div class="menu-wrap">
+    <body class="page-header-fixed page-horizontal-bar">
+        <div class="overlay"></div>
 
-                <button class="close-button" id="close-button">Close Menu</button>
-            </div>
-            <form class="search-form" action="#" method="GET">
-                <div class="input-group">
-                    <input type="text" name="search" class="form-control search-input" placeholder="Search...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i class="fa fa-times"></i></button>
-                    </span>
-                </div><!-- Input Group -->
-            </form><!-- Search Form -->
-            <main class="page-content content-wrap">
-                <div class="navbar">
-                    <div class="navbar-inner">
-                        <div class="sidebar-pusher">
-                            <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
-                                <i class="fa fa-bars"></i>
+
+        <div class="menu-wrap">
+
+            <button class="close-button" id="close-button">Close Menu</button>
+        </div>
+        <form class="search-form" action="#" method="GET">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control search-input" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default close-search waves-effect waves-button waves-classic" type="button"><i class="fa fa-times"></i></button>
+                </span>
+            </div><!-- Input Group -->
+        </form><!-- Search Form -->
+        <main class="page-content content-wrap">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="sidebar-pusher">
+                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                    <div class="logo-box">
+                        <a href="index.html" class="logo-text"><span>Modern</span></a>
+                    </div><!-- Logo Box -->
+                    <div class="search-button">
+                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                    </div>
+                    <div class="topmenu-outer">
+                        <div class="top-menu">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>        
+                                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic sidebar-toggle"><i class="fa fa-bars"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#cd-nav" class="waves-effect waves-button waves-classic cd-nav-trigger"><i class="fa fa-diamond"></i></a>
+                                </li>
+                                <li>        
+                                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic toggle-fullscreen"><i class="fa fa-expand"></i></a>
+                                </li>
+
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>    
+                                    <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success pull-right">3</span></a>
+                                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                        <li><p class="drop-title">You have 3 pending tasks !</p></li>
+                                        <li class="dropdown-menu-list slimscroll tasks">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="task-icon badge badge-success"><i class="icon-user"></i></div>
+                                                        <span class="badge badge-roundless badge-default pull-right">1min ago</span>
+                                                        <p class="task-details">New user registered.</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="task-icon badge badge-danger"><i class="icon-energy"></i></div>
+                                                        <span class="badge badge-roundless badge-default pull-right">24min ago</span>
+                                                        <p class="task-details">Database error.</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="task-icon badge badge-info"><i class="icon-heart"></i></div>
+                                                        <span class="badge badge-roundless badge-default pull-right">1h ago</span>
+                                                        <p class="task-details">Reached 24k likes</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="drop-all"><a href="#" class="text-center">All Tasks</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
+                                        <span class="user-name">David<i class="fa fa-angle-down"></i></span>
+                                        <img class="img-circle avatar" src="assets/admin/images/avatar1.png" width="40" height="40" alt="">
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-list" role="menu">
+                                        <li role="presentation"><a href="settings.html"><i class="fa fa-user"></i>settings</a></li>
+                                        <li role="presentation"><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
+                                        <li role="presentation"><a href="inbox.html"><i class="fa fa-envelope"></i>Inbox<span class="badge badge-success pull-right">4</span></a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li role="presentation"><a href="lock-screen.html"><i class="fa fa-lock"></i>Lock screen</a></li>
+                                        <li role="presentation"><a href="login.html"><i class="fa fa-sign-out m-r-xs"></i>Log out</a></li>
+                                    </ul>
+                                </li>
+
+
+                            </ul><!-- Nav -->
+                        </div><!-- Top Menu -->
+                    </div>
+                </div>
+            </div><!-- Navbar -->
+            <div class="horizontal-bar sidebar">
+                <div class="page-sidebar-inner slimscroll">
+                    <div class="sidebar-header">
+                        <div class="sidebar-settings">
+                            <a href="javascript:void(0);" id="settings-menu-link">
+                                <div class="sidebar-settings-image">
+                                    <img src="assets/admin/images/settings-menu-image.png" class="img-circle img-responsive" alt="">
+                                </div>
+                                <div class="sidebar-settings-details">
+                                    <span>David Green<br><small>Art Director</small></span>
+                                </div>
                             </a>
                         </div>
-                        <div class="logo-box">
-                            <a href="index.html" class="logo-text"><span>Modern</span></a>
-                        </div><!-- Logo Box -->
-                        <div class="search-button">
-                            <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
-                        </div>
-                        <div class="topmenu-outer">
-                            <div class="top-menu">
-                                <ul class="nav navbar-nav navbar-left">
-                                    <li>        
-                                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic sidebar-toggle"><i class="fa fa-bars"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#cd-nav" class="waves-effect waves-button waves-classic cd-nav-trigger"><i class="fa fa-diamond"></i></a>
-                                    </li>
-                                    <li>        
-                                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic toggle-fullscreen"><i class="fa fa-expand"></i></a>
-                                    </li>
-
-                                </ul>
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li>    
-                                        <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
-                                    </li>
-                                    
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-success pull-right">3</span></a>
-                                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
-                                            <li><p class="drop-title">You have 3 pending tasks !</p></li>
-                                            <li class="dropdown-menu-list slimscroll tasks">
-                                                <ul class="list-unstyled">
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="task-icon badge badge-success"><i class="icon-user"></i></div>
-                                                            <span class="badge badge-roundless badge-default pull-right">1min ago</span>
-                                                            <p class="task-details">New user registered.</p>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="task-icon badge badge-danger"><i class="icon-energy"></i></div>
-                                                            <span class="badge badge-roundless badge-default pull-right">24min ago</span>
-                                                            <p class="task-details">Database error.</p>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="task-icon badge badge-info"><i class="icon-heart"></i></div>
-                                                            <span class="badge badge-roundless badge-default pull-right">1h ago</span>
-                                                            <p class="task-details">Reached 24k likes</p>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="drop-all"><a href="#" class="text-center">All Tasks</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown">
-                                            <span class="user-name">David<i class="fa fa-angle-down"></i></span>
-                                            <img class="img-circle avatar" src="assets/admin/images/avatar1.png" width="40" height="40" alt="">
-                                        </a>
-                                        <ul class="dropdown-menu dropdown-list" role="menu">
-                                            <li role="presentation"><a href="settings.html"><i class="fa fa-user"></i>settings</a></li>
-                                            <li role="presentation"><a href="calendar.html"><i class="fa fa-calendar"></i>Calendar</a></li>
-                                            <li role="presentation"><a href="inbox.html"><i class="fa fa-envelope"></i>Inbox<span class="badge badge-success pull-right">4</span></a></li>
-                                            <li role="presentation" class="divider"></li>
-                                            <li role="presentation"><a href="lock-screen.html"><i class="fa fa-lock"></i>Lock screen</a></li>
-                                            <li role="presentation"><a href="login.html"><i class="fa fa-sign-out m-r-xs"></i>Log out</a></li>
-                                        </ul>
-                                    </li>
-
-
-                                </ul><!-- Nav -->
-                            </div><!-- Top Menu -->
-                        </div>
                     </div>
-                </div><!-- Navbar -->
-                <div class="horizontal-bar sidebar">
-                    <div class="page-sidebar-inner slimscroll">
-                        <div class="sidebar-header">
-                            <div class="sidebar-settings">
-                                <a href="javascript:void(0);" id="settings-menu-link">
-                                    <div class="sidebar-settings-image">
-                                        <img src="assets/admin/images/settings-menu-image.png" class="img-circle img-responsive" alt="">
-                                    </div>
-                                    <div class="sidebar-settings-details">
-                                        <span>David Green<br><small>Art Director</small></span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <ul class="menu accordion-menu">
+                    <ul class="menu accordion-menu">
 
-                            <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
-                            <li class="active"><a href="orders.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-file"></span><p>Orders</p></a></li>
-                            <li><a href="settings.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Settings</p></a></li>
-                           <li><a href="Data.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Data</p></a></li>
-                        </ul>
-                    </div><!-- Page Sidebar Inner -->
-                </div><!-- Page Sidebar -->
-                <div class="page-inner">
-                    <div class="page-title">
-                        <h3>Orders</h3>
-                        <div class="page-breadcrumb">
-                            <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">Orders</li>
-                            </ol>
-                        </div>
+                        <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
+                        <li class="active"><a href="orders.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-file"></span><p>Orders</p></a></li>
+                        <li><a href="settings.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Settings</p></a></li>
+                        <li><a href="Data.html" class="waves-effect waves-button"><span class="menu-icon fa fa-database"></span><p>Data</p></a></li>
+                    </ul>
+                </div><!-- Page Sidebar Inner -->
+            </div><!-- Page Sidebar -->
+            <div class="page-inner">
+                <div class="page-title">
+                    <h3>Orders</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="active">Data</li>
+                        </ol>
                     </div>
-                    <div id="main-wrapper">
+                </div>
+                <div id="main-wrapper">
 
-                        <div class="row">
-                           <div class="col-lg-12 col-md-12">
-                               <label class="">Filters</label>
-                               <div class="panel panel-white">
-                                   <div class="panel-body">
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
-                                            <input type="date" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>                
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
-                                            <input type="date" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>        
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <select class="form-control">
-                                                <option>All Processing States</option>
-                                            </select>
-
-                                        </div>
-                                    </div>        
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <select class="form-control">
-                                                <option>All Payment States</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="input-group">
-                                              <select class="form-control">
-                                                <option>Approve all pending orders</option>
-                                            </select>
-                                            <div class="input-group-btn">
-                                            <button type="button" class="btn btn-primary" >Apply </button>
-                                    
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col-sm-6">
-                                        <div class="input-group">
-                                             <input type="search" class="form-control" placeholder="Search">
-                                            <div class="input-group-btn">
-                                            <button type="button" class="btn btn-primary" ><i class="fa fa-search"></i> Search </button>
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        
-                    </div>
                     <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="panel panel-white">
+                       <div class="col-lg-12 col-md-12">
 
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h3 class="panel-title"></h3>
+                            </div>
+                            <div class="panel-body">
+                                <div role="tabpanel">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs nav-justified" role="tablist">
+                                        <li role="presentation" class="active"><a href="#tab21" role="tab" data-toggle="tab">Products</a></li>
+                                        <li role="presentation"><a href="#tab22" role="tab" data-toggle="tab">Inventory</a></li>
+                                        <li role="presentation"><a href="#tab23" role="tab" data-toggle="tab">Categories</a></li>
 
+                                    </ul>
+                                    <!-- Tab panes -->
+                                     <div class="tab-content">
+                                          <div role="tabpanel" class="tab-pane active fade in" id="tab21">
+                                                   <table class="table">
+                                                                    <thead>
+                                                                        <tr>
 
+                                                                            <th>Name</th>
+                                                                            <th>Price</th>
+                                                                            <th>Promotion</th>
+                                                                            <th>Active</th>
 
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">Orders</h4>
-                                </div>
-                                <div class="panel-body">
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
 
+                                                                            <td>Product 1</td>
+                                                                            <td>6.5</td>
+                                                                            <td>false</td>
+                                                                            <td>Active</td>
 
-                                    <div class="table-responsive project-stats">  
-                                     <table class="table">
-                                        <thead>
-                                            <tr>
+                                                                        </tr>
+                                                                        <tr>
 
-                                                <th>Merchant</th>
-                                                <th>Date</th>
-                                                <th>Reference</th>
-                                                <th>Total Units</th>
-                                                <th>Amount Paid</th>
-                                                <th>Amount</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
+                                                                            <td>Product 3</td>
+                                                                            <td>8.5</td>
+                                                                            <td>false </td>
+                                                                            <td>Active </td>
 
-                                                <td>PhoneShop1</td>
-                                                <td>2017-03-03T15:04:11.7</td>
-                                                <td>    00E49D07C6C7497CA2B4898BF44DE0BA</td>
-                                                <td>2</td>
-                                                <td>KSH: 0</td>
-                                                <td>KSH: 25</td>
-                                                <td>PendingApproval</td>
-                                            </tr>
-                                            <tr>
+                                                                        </tr>
+                                                                        <tr>
 
-                                                <td>PhoneShop1</td>
-                                                <td>    2017-03-03T14:59:28.807</td>
-                                                <td>    F70290697881457C862F2157D410F42A</td>
-                                                <td>3</td>
-                                                <td>KSH: 119.5</td>
-                                                <td>KSH: 119.5</td>
-                                                <td>PendingApproval</td>
-                                            </tr>
+                                                                            <td>Product 5</td>
+                                                                            <td>10.5</td>
+                                                                            <td>false </td>
+                                                                            <td>Active </td>
 
-                                        </tbody>
-                                    </table>
+                                                                        </tr>
+                                                                        <tr>
+
+                                                                            <td>Product 11</td>
+                                                                            <td>16.5</td>
+                                                                            <td>false </td>
+                                                                            <td>Active </td>
+
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                       
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="tab22">
+                                                   <table class="table">
+                                                                <thead>
+                                                                    <tr>
+
+                                                                        <th>Name</th>
+                                                                        <th>Quantty</th>
+                                                                        <th>On Order</th>
+                                                                        <th>Reserved</th>
+                                                                        <th>Available</th>
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Product 1</td>
+                                                                        <td>10</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Product 3</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Product 5</td>
+                                                                        <td>10</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Product 15</td>
+                                                                        <td>10</td>
+                                                                        <td>0</td>
+                                                                        <td>0</td>
+                                                                        <td>10</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="tab23">
+                                                    <table class="table">
+                                                                <thead>
+                                                                    <tr>
+
+                                                                        <th>Name</th>
+                                                                        <th>Active</th>
+                                                                       
+
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Access</td>
+                                                                        <td>Active</td>
+                                                                        
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Electronics</td>
+                                                                        <td>Active</td>
+                                                                        
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                </div>
+
+                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- Main Wrapper -->
-            <div class="page-footer">
-                <p class="no-s">2015 &copy; Virtual City</p>
             </div>
-        </div><!-- Page Inner -->
-    </main><!-- Page Content -->
-    <nav class="cd-nav-container" id="cd-nav">
-        <header>
-            <h3>Navigation</h3>
-            <a href="#0" class="cd-close-nav">Close</a>
-        </header>
-        <ul class="cd-nav list-unstyled">
-            <li class="cd-selected" data-menu="index">
-                <a href="javsacript:void(0);">
-                    <span>
-                        <i class="glyphicon glyphicon-home"></i>
-                    </span>
-                    <p>Dashboard</p>
-                </a>
-            </li>
-            <li data-menu="settings">
-                <a href="javsacript:void(0);">
-                    <span>
-                        <i class="glyphicon glyphicon-user"></i>
-                    </span>
-                    <p>settings</p>
-                </a>
-            </li>
-            <li data-menu="inbox">
-                <a href="javsacript:void(0);">
-                    <span>
-                        <i class="glyphicon glyphicon-envelope"></i>
-                    </span>
-                    <p>Mailbox</p>
-                </a>
-            </li>
-            <li data-menu="#">
-                <a href="javsacript:void(0);">
-                    <span>
-                        <i class="glyphicon glyphicon-tasks"></i>
-                    </span>
-                    <p>Tasks</p>
-                </a>
-            </li>
-
-            <li data-menu="calendar">
-                <a href="javsacript:void(0);">
-                    <span>
-                        <i class="glyphicon glyphicon-calendar"></i>
-                    </span>
-                    <p>Calendar</p>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="cd-overlay"></div>
+        </div>
+    </div>
 
 
-    <!-- Javascripts -->
-    <script src="assets/admin/plugins/jquery/jquery-2.1.4.min.js"></script>
-    <script src="assets/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="assets/admin/plugins/pace-master/pace.min.js"></script>
-    <script src="assets/admin/plugins/jquery-blockui/jquery.blockui.js"></script>
-    <script src="assets/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="assets/admin/plugins/switchery/switchery.min.js"></script>
-    <script src="assets/admin/plugins/uniform/jquery.uniform.min.js"></script>
-    <script src="assets/admin/plugins/offcanvasmenueffects/js/classie.js"></script>
-    <script src="assets/admin/plugins/offcanvasmenueffects/js/main.js"></script>
-    <script src="assets/admin/plugins/waves/waves.min.js"></script>
-    <script src="assets/admin/plugins/3d-bold-navigation/js/main.js"></script>
-    <script src="assets/admin/js/modern.min.js"></script>
 
-    </body>
+    <!-- Main Wrapper -->
+    <div class="page-footer">
+        <p class="no-s">2015 &copy; Virtual City</p>
+    </div>
+</div><!-- Page Inner -->
+</main><!-- Page Content -->
+<nav class="cd-nav-container" id="cd-nav">
+    <header>
+        <h3>Navigation</h3>
+        <a href="#0" class="cd-close-nav">Close</a>
+    </header>
+    <ul class="cd-nav list-unstyled">
+        <li class="cd-selected" data-menu="index">
+            <a href="javsacript:void(0);">
+                <span>
+                    <i class="glyphicon glyphicon-home"></i>
+                </span>
+                <p>Dashboard</p>
+            </a>
+        </li>
+        <li data-menu="settings">
+            <a href="javsacript:void(0);">
+                <span>
+                    <i class="glyphicon glyphicon-user"></i>
+                </span>
+                <p>settings</p>
+            </a>
+        </li>
+        <li data-menu="inbox">
+            <a href="javsacript:void(0);">
+                <span>
+                    <i class="glyphicon glyphicon-envelope"></i>
+                </span>
+                <p>Mailbox</p>
+            </a>
+        </li>
+        <li data-menu="#">
+            <a href="javsacript:void(0);">
+                <span>
+                    <i class="glyphicon glyphicon-tasks"></i>
+                </span>
+                <p>Tasks</p>
+            </a>
+        </li>
 
-    <!--layout-horizontal-menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2017 09:17:16 GMT -->
-    </html>
+        <li data-menu="calendar">
+            <a href="javsacript:void(0);">
+                <span>
+                    <i class="glyphicon glyphicon-calendar"></i>
+                </span>
+                <p>Calendar</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+<div class="cd-overlay"></div>
+
+
+<!-- Javascripts -->
+<script src="assets/admin/plugins/jquery/jquery-2.1.4.min.js"></script>
+<script src="assets/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/admin/plugins/pace-master/pace.min.js"></script>
+<script src="assets/admin/plugins/jquery-blockui/jquery.blockui.js"></script>
+<script src="assets/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/admin/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/admin/plugins/switchery/switchery.min.js"></script>
+<script src="assets/admin/plugins/uniform/jquery.uniform.min.js"></script>
+<script src="assets/admin/plugins/offcanvasmenueffects/js/classie.js"></script>
+<script src="assets/admin/plugins/offcanvasmenueffects/js/main.js"></script>
+<script src="assets/admin/plugins/waves/waves.min.js"></script>
+<script src="assets/admin/plugins/3d-bold-navigation/js/main.js"></script>
+<script src="assets/admin/js/modern.min.js"></script>
+
+</body>
+
+<!--layout-horizontal-menu.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Mar 2017 09:17:16 GMT -->
+</html>
