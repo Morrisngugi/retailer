@@ -5,7 +5,7 @@
     <head>
 
         <!-- Title -->
-        <title>Retailer | Orders</title>
+        <title>Retailer | Settings</title>
 
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta charset="UTF-8">
@@ -156,80 +156,23 @@
                             <li><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
                             <li class="active"><a href="orders.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-file"></span><p>Orders</p></a></li>
                             <li><a href="settings.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Settings</p></a></li>
-                          <li><a href="Data.html" class="waves-effect waves-button"><span class="menu-icon fa fa-database"></span><p>Data</p></a></li>
+                           <li><a href="Data.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-user"></span><p>Data</p></a></li>
                         </ul>
                     </div><!-- Page Sidebar Inner -->
                 </div><!-- Page Sidebar -->
                 <div class="page-inner">
                     <div class="page-title">
-                        <h3>Orders</h3>
+                        <h3>Settings</h3>
                         <div class="page-breadcrumb">
                             <ol class="breadcrumb">
                                 <li><a href="index.html">Home</a></li>
-                                <li class="active">Orders</li>
+                                <li class="active">Settings</li>
                             </ol>
                         </div>
                     </div>
                     <div id="main-wrapper">
 
-                        <div class="row">
-                           <div class="col-lg-12 col-md-12">
-                               <label class="">Filters</label>
-                               <div class="panel panel-white">
-                                   <div class="panel-body">
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
-                                            <input type="date" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>                
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-calendar"></i></span>
-                                            <input type="date" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>        
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <select class="form-control">
-                                                <option>All Processing States</option>
-                                            </select>
-
-                                        </div>
-                                    </div>        
-                                    <div class="col-sm-3">
-                                        <div class="input-group m-b-sm">
-                                            <select class="form-control">
-                                                <option>All Payment States</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="input-group">
-                                              <select class="form-control">
-                                                <option>Approve all pending orders</option>
-                                            </select>
-                                            <div class="input-group-btn">
-                                            <button type="button" class="btn btn-primary" >Apply </button>
-                                    
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div class="col-sm-6">
-                                        <div class="input-group">
-                                             <input type="search" class="form-control" placeholder="Search">
-                                            <div class="input-group-btn">
-                                            <button type="button" class="btn btn-primary" ><i class="fa fa-search"></i> Search </button>
-                                    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                         
-                    </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
                             <div class="panel panel-white">
@@ -238,51 +181,63 @@
 
 
                                 <div class="panel-heading">
-                                    <h4 class="panel-title">Orders</h4>
+                                    <h4 class="panel-title">Add User</h4>
                                 </div>
                                 <div class="panel-body">
+                                    
+                                    <div class="panel panel-white">
+                                
+                                <div class="panel-body">
+                                    <form>
+                                      <div class="col-xs-12 col-sm-6">
+                <label>Name</label>
+                <div class="row form-group">
+                    <div class="col-xs-6">
+                        <input type="text" name="first" class="form-control" >
+                        
+                    </div>
+                    <div class="col-xs-6">
+                        <input type="text" name="last" class="form-control" >
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <div>
+                        <input type="text" name="username" class="form-control"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input name="password" type="password" class="form-control" placeholder="Length 8-32 inc. one of !,@,#,$,%,^,&,*" ng-pattern="/^(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,32}$/">
+                    
+                </div>
 
-
-                                    <div class="table-responsive project-stats">  
-                                     <table class="table">
-                                        <thead>
-                                            <tr>
-
-                                                <th>Merchant</th>
-                                                <th>Date</th>
-                                                <th>Reference</th>
-                                                <th>Total Units</th>
-                                                <th>Amount Paid</th>
-                                                <th>Amount</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-
-                                                <td>PhoneShop1</td>
-                                                <td>2017-03-03T15:04:11.7</td>
-                                                <td>    00E49D07C6C7497CA2B4898BF44DE0BA</td>
-                                                <td>2</td>
-                                                <td>KSH: 0</td>
-                                                <td>KSH: 25</td>
-                                                <td>PendingApproval</td>
-                                            </tr>
-                                            <tr>
-
-                                                <td>PhoneShop1</td>
-                                                <td>    2017-03-03T14:59:28.807</td>
-                                                <td>    F70290697881457C862F2157D410F42A</td>
-                                                <td>3</td>
-                                                <td>KSH: 119.5</td>
-                                                <td>KSH: 119.5</td>
-                                                <td>PendingApproval</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
+                <div class="form-group">
+                    <label>Roles </label>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!--<label>Roles </label>-->
+                         <table class="table" style="margin-top: 16px">
+                                <tbody>
+                                <tr ng-repeat="role in roles">
+                                    
+                                    <td>
+                                        <switch name="{{role.Name}}" class="col-xs-6 pull-right" ng-model="role.enabled"></switch>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                               <!--<select ng-model="selectedRole" ng-options="role.Name for role in roles" placeholder ="Select Role..."></select>-->
+                           <!--<h1>{{selectedRole.Name}}</h1>--> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                    </form>
                                 </div>
                             </div>
+                                </div>
                         </div>
                     </div>
                 </div>
